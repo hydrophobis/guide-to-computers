@@ -15,6 +15,7 @@
           left: 25%;
           margin: 0 auto; /* Center the container */
           overflow-x: auto; /* Enable horizontal scrolling if needed */
+          overflow-y: auto;
         }
 
         a {
