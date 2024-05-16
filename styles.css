@@ -11,7 +11,7 @@
 
         .div-50 {
           width: 50%;
-          position: fixed;
+          position: relative;
           left: 25%;
           margin: 0 auto; /* Center the container */
           overflow-x: auto; /* Enable horizontal scrolling if needed */
