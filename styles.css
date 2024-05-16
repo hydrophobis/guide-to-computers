@@ -22,7 +22,7 @@
           display: inline-block; /* Ensure the container only takes the space it needs */
         }
 
-        h1, h2 {
+        h1, h2, h3 {
             color: #d5f0e5;
         }
         h1 {
