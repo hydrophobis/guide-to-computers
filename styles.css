@@ -7,6 +7,8 @@
         body {
           background-color: var(--background-color);
           color: var(--text-color);
+          width: 50%;
+          x: 25%
         }
 
         a {
