@@ -8,6 +8,8 @@
           background-color: var(--background-color);
           color: var(--text-color);
           width: 50%;
+          position: fixed;
+          left: 25%;
         }
 
         .div-50 {
