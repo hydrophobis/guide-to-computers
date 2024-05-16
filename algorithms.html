@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+  <title>Algorithms</title>
+</head>
+<body>
+  <h1>Sorting Algorithms</h1>
+  <h2>Bubble Sort</h2>
+  <p>Concept: Imagine you have a list of numbers written on a piece of paper. You look at the first two numbers, and if the first one is bigger than the second, you swap them. Then you move one step forward and do the same for the next pair. You keep doing this until you reach the end of the list, then start over from the beginning. You repeat this process until no more swaps are needed.</p>
+  <p>Example: Sorting the list [5, 3, 8, 4]:
+    Compare 5 and 3, swap them to get [3, 5, 8, 4]
+    Compare 5 and 8, no swap needed
+    Compare 8 and 4, swap them to get [3, 5, 4, 8]
+    Repeat the process until the list is [3, 4, 5, 8]
+  </p>
+
+  <h2>Merge Sort</h2>
+  <p> Concept: You split the list into two smaller lists, sort each of those smaller lists, and then combine them back together in the correct order. You keep splitting the lists until each list has only one number, which is by default sorted, and then merge them back step by step.
+      Example: Sorting the list [5, 3, 8, 4]:
+      Split into [5, 3] and [8, 4]
+      Split again into [5], [3], [8], [4]
+      Merge to get [3, 5] and [4, 8]
+      Merge again to get [3, 4, 5, 8]
+  </p>
+
+  <h2>Quick Sort</h2>
+  <p> Concept: Pick a number from the list (called the pivot). Reorganize the list so that all numbers less than the pivot come before it, and all numbers greater than the pivot come after it. Then do the same for the sub-lists of numbers before and after the pivot.
+      Example: Sorting the list [5, 3, 8, 4] with pivot 5:
+      Reorganize to get [3, 4] (less than 5) and [8] (greater than 5)
+      Sort the sub-lists (which are already sorted in this case)
+      Result is [3, 4, 5, 8]
+  </p>
+
+  <h1>Searching Algorithms</h1>
+  
+  <h2>Linear Search</h2>
+  <p>Concept: Imagine you're looking for a specific book on a shelf. You start at one end and check each book one by one until you find the one you're looking for or reach the end of the shelf.
+    Example: Searching for 4 in [5, 3, 8, 4]:
+    Look at 5 (not it), then 3 (not it), then 8 (not it), and finally 4 (found it).
+  </p>
+
+  <h2>Binary Search</h2>
+  <p>Concept: This only works if your list is sorted. Imagine looking for a word in a dictionary. You don't start at the beginning; instead, you open the book in the middle, see if the word is there, and if it's not, you decide if you need to look in the first half or the second half. You keep doing this, splitting the section you're looking in by half each time.
+    Example: Searching for 4 in [3, 4, 5, 8]:
+    Open in the middle (find 5, which is too high)
+    Look in the first half [3, 4]
+    Open in the middle (find 4, which is correct)
+  </p>
+
+  <h1>Recursion</h1>
+  <p>Concept: Recursion is like when you have a task that can be broken down into smaller, similar tasks. You keep breaking the task down until you reach the smallest possible version of it, solve that, and then build the solution back up.
+    Example:
+    Factorial of a number n (n!): If you want to find the factorial of 3 (which is 3!), you calculate it as 3 x 2!, and to find 2!, you calculate it as 2 x 1!. You know that 1! is just 1. So, 3! = 3 x 2 x 1 = 6.
+    Fibonacci sequence: To find the 5th number in the sequence (where each number is the sum of the two preceding ones), you find the 4th and 3rd numbers first, then the 4th is the sum of the 3rd and 2nd, and so on.
+  </p>
+
+  <h1>Other Common Algorithms</h1>
+  <h2>Depth First Search(or DFS)</h2>
+  <p>Concept: Imagine you're exploring a maze. You pick a path and follow it as far as you can go. If you hit a dead end, you backtrack to the last choice you had and try a different path. You keep doing this until you find the exit or explore all possible paths.
+    Example: Traversing a graph starting from node A:
+    Visit A, then explore one of its connections fully before backtracking.
+  </p>
+
+  <h2>Breadth First Search</h2>
+  <p>Concept: Instead of going deep into one path, you explore all paths one step at a time. Imagine you're searching for someone in a building, floor by floor. You check all rooms on the first floor before moving to the second floor.
+    Example: Traversing a graph starting from node A:
+    Visit A, then visit all direct connections of A before moving to their connections.
+  </p>
+</body>
